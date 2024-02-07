@@ -7,6 +7,7 @@
     body {
       margin: 0;
       padding: 0;
+      background: url('IMG_0407red.jpeg') center/cover no-repeat;
       font-family: 'Helvetica','Arial', sans-serif;
       display: flex;
       align-items: center;
@@ -14,19 +15,22 @@
     }
 
     .container {
+      height: 100vh;
+      width: 33vh;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      background: url('IMG_0407red.jpeg') center/cover no-repeat;
-      height: 100vh;
-      width: 100vh;
+      
     }
 
     .logo {
+      margin-top: 5vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: top;
       text-align: center;
       max-width: 250px;
       /* Adjust the max-width according to your logo size */
@@ -36,15 +40,16 @@
     .linktree {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: bottom;
       text-align: center;
       background: rgba(255, 255, 255, 0.5);
-      padding: 20px;
+      margin-top: 5vh;
+      padding: 10px;
       border-radius: 20px;
     }
 
     .link {
-      width: 100px;
+      width: 20vw;
       margin: 10px;
       text-decoration: none;
       color: #333;
@@ -57,11 +62,10 @@
       transition: background-color 0.3s ease-in-out;
     }
 
-    .link:hover {
-      background-color: #2980b9;
-    }
     /* Media Queries for Responsive Layout */
     @media only screen and (max-width: 768px) {
+      
+
       .logo {
         max-width: 150px;
       }
@@ -73,6 +77,11 @@
     }
 
     @media only screen and (max-width: 480px) {
+
+      .container {
+        max-width: 480px;
+      }
+
       .logo {
         max-width: 100px;
       }
@@ -92,10 +101,10 @@
     <img src="BIG CITY NIGHTS LOGO.png" alt="BIG CITY NIGHTS" class="logo">
   </div>
   <div class="linktree">
-    <a href="https://www.etsy.com/es/listing/1614855967/bcn01-city-lamp-inspired-in-barcelona?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=BCN01+LAMP&ref=sr_gallery-1-1&local_signal_search=1&search_preloaded_img=1&organic_search_click=1" class="link">SHOP</a>
-    <a href="https://faqsys.magichue.net:4489/download/zgble_download.html?tpn=1707152108974" class="link">APP</a>
-    <a href="https://faqsys.magichue.net:4489/content.html?tpn=1707152342094&contentUniID=2f5e40bcffba4c1780fce94af75b9afc" class="link">MANUAL</a>
-    <a href="#" class="link">IG</a>
+    <a href="https://www.etsy.com/es/listing/1614855967/bcn01-city-lamp-inspired-in-barcelona?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=BCN01+LAMP&ref=sr_gallery-1-1&local_signal_search=1&search_preloaded_img=1&organic_search_click=1" class="link" target="_blank" rel="noreferrer noopener">SHOP</a>
+    <a href="https://faqsys.magichue.net:4489/download/zgble_download.html?tpn=1707152108974" class="link" target="_blank" rel="noreferrer noopener" >APP</a>
+    <a href="https://faqsys.magichue.net:4489/content.html?tpn=1707152342094&contentUniID=2f5e40bcffba4c1780fce94af75b9afc" class="link" target="_blank" rel="noreferrer noopener" >MANUAL</a>
+    <a href="#" class="link" target="_blank" rel="noreferrer noopener">IG</a>
   </div>
 </div>
 
