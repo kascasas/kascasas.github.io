@@ -8,22 +8,27 @@
       margin: 0;
       padding: 0;
       font-family: 'Helvetica','Arial', sans-serif;
-      background: url('IMG_0407red.jpeg') center/cover no-repeat;
-      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .container {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      text-align: center;
+      background: url('IMG_0407red.jpeg') center/cover no-repeat;
+      height: 100vh;
+      width: 100vh;
     }
 
     .logo {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      max-width: 250px; 
+      text-align: center;
+      max-width: 250px;
       /* Adjust the max-width according to your logo size */
     }
 
@@ -55,12 +60,36 @@
     .link:hover {
       background-color: #2980b9;
     }
+    /* Media Queries for Responsive Layout */
+    @media only screen and (max-width: 768px) {
+      .logo {
+        max-width: 150px;
+      }
+
+      .link {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .logo {
+        max-width: 100px;
+      }
+
+      .link {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
   </style>
+   
 </head>
 <body>
+  
 <div class="container">
   <div class="logo">
-    <img src="BIG CITY NIGHTS LOGO.png" alt="Your Logo" class="logo">
+    <img src="BIG CITY NIGHTS LOGO.png" alt="BIG CITY NIGHTS" class="logo">
   </div>
   <div class="linktree">
     <a href="https://www.etsy.com/es/listing/1614855967/bcn01-city-lamp-inspired-in-barcelona?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=BCN01+LAMP&ref=sr_gallery-1-1&local_signal_search=1&search_preloaded_img=1&organic_search_click=1" class="link">SHOP</a>
